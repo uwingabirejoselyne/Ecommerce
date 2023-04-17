@@ -1,0 +1,11 @@
+# Django files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.py~
+
+# JS/Bootstrap files
+node_modules/
+static/js/*.js
+static/css/*.css
