@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
-:root{
---lg-font:'Kaisei Tokimin',serif;
---sm-font:'Poppins',sans-serif;
---pink:#e5345b;
 
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
 }
 body{
     font-family: var(--sm-font);
@@ -102,6 +102,23 @@ width: 30px;
         -ms-transform: scale(1.2);
             transform: scale(1.2);
 }
+#offers{
+    background: url('./images/offer_img.jpg') center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
 .navbar-light .navbar-toggler-icon {
     background-image: "url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' %3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e)";
 }
