@@ -9,3 +9,15 @@ __pycache__/
 node_modules/
 static/js/*.js
 static/css/*.css
+
+# Compiled output
+dist/
+*.min.css
+*.min.js
+
+# Dependencies
+node_modules/
+
+# Package files
+npm-debug.log
+package-lock.json

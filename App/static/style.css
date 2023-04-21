@@ -28,7 +28,7 @@ body{
 }
 
 .navbar{
-    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
 .navbar-brand img{
 width: 30px;
@@ -145,6 +145,9 @@ width: 30px;
     background-color: #000;
     border-color: #000;
 }
+footer{
+    margin-top: 50px;
+}
 footer .brand{
     font-family: var(--lg-font);
     letter-spacing: 2px;
@@ -156,6 +159,9 @@ footer a{
 }
 footer a:hover{
     color: var(--pink)!important;
+}
+#page-top{
+    margin-top: 500px;
 }
 
 /* media queries */
