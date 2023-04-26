@@ -35,10 +35,11 @@
             <button type="button" class="btn m-2 text-dark" data-filter=".new">New Arrivals</button>
           </div>
           <div class="collection-list mt-4 row gx-0 gy-3">
+          {% for product in data %}
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
               <div class="collection-img position-relative">
-                <img src="{% static './images/c_formal_gray_shirt.png' %}" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                <img src="{{product.image}}" class="w-100" alt="">
+                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">{{product.status}}</span>
               </div>
               <div class="text-center">
                 <div class="rating mt-3">
@@ -46,115 +47,11 @@
                   <span class="text-primary"><i class="fa fa-star"></i></span>
                   <span class="text-primary"><i class="fa fa-star"></i></span>
                 </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
+                <p class="text-capitalise my-1">{{product.description}}</p>
+                <span class="fw-bold">$ {{product.price}}</span>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
-              <div class="collection-img position-relative">
-                <img src="{% static './images/c_pant_girl.png' %}" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
-              </div>
-              <div class="text-center">
-                <div class="rating mt-3">
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
-              <div class="collection-img position-relative">
-                <img src="{% static '' %}./images/c_polo-shirt.png" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
-              </div>
-              <div class="text-center">
-                <div class="rating mt-3">
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
-              <div class="collection-img position-relative">
-                <img src="{% static './images/c_shirt-girl.png' %}" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
-              </div>
-              <div class="text-center">
-                <div class="rating mt-3">
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
-              <div class="collection-img position-relative">
-                <img src="{% static './images/c_t-shirt_men.png' %}" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
-              </div>
-              <div class="text-center">
-                <div class="rating mt-3">
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
-              <div class="collection-img position-relative">
-                <img src="{% static './images/c_tunic-shirt_girl.png' %}" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
-              </div>
-              <div class="text-center">
-                <div class="rating mt-3">
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
-              <div class="collection-img position-relative">
-                <img src="./images/c_undershirt.png" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
-              </div>
-              <div class="text-center">
-                <div class="rating mt-3">
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
-              <div class="collection-img position-relative">
-                <img src="{% static './images/c_undershirt.png' %}" class="w-100" alt="">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
-              </div>
-              <div class="text-center">
-                <div class="rating mt-3">
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                  <span class="text-primary"><i class="fa fa-star"></i></span>
-                </div>
-                <p class="text-capitalise my-1">Gray T-shirt</p>
-                <span class="fw-bold">$ 45.50</span>
-              </div>
-            </div>
+          {% endfor %}
           </div>
         </div>
       </div>

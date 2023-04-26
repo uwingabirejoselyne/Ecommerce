@@ -5,8 +5,8 @@ import random
 
 # Create your views here.
 def Home(request):
-
-    return render(request,'index.html')
+    data = Product.objects.all()
+    return render(request,'index.html',{'data':data})
 
 def Dashboard(request):
 
@@ -16,6 +16,10 @@ def Dashboard(request):
 def BaseDashboard(request):
 
     return render(request,'admin/dashboard1.html')
+
+def Category(request):
+
+    return render(request,'admin/categories.html')
 
 
 def addProduct(request):
@@ -46,4 +50,6 @@ def addProduct(request):
         )
         products.save()
     return render(request,'admin/add_product.html')
+
+
 
