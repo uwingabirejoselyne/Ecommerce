@@ -15,4 +15,13 @@ class Product(models.Model):
     order=models.CharField(max_length = 30)
     status_choices = ('sold','Sold'),('Available','Available')
     status = models.CharField(max_length=10, choices=status_choices, default='Available')
+
+
+class Category(models.Model):
+    category_Id =models.CharField(max_length = 20)
+    category_title =models.CharField(max_length = 30)
+    slug=models.CharField(max_length = 30)
+    category_image=models.ImageField(upload_to='images/')
+    category_description = models.CharField(max_length = 20)
+    
     

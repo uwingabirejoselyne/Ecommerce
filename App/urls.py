@@ -8,6 +8,6 @@ urlpatterns = [
     path('dashboard',views.Dashboard,name='dashboard'),
     path('base-dashboard',views.BaseDashboard,name='base-dashboard'),
     path('addproduct',views.addProduct,name='addproduct'),
-    path('category',views.Category,name='category'),
+    path('category',views.Categories,name='category'),
     ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     
